@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <!-- NAVBAR START -->
+    <header class="container-navbar">
+      <nav class="navbar">
+        <img src="img/logokuyliner.png" alt="" />
+        <div class="navbar-nav">
+          <a href="#hero-section">Home</a>
+          <a href="#menu-section">Kuliner</a>
+          <a href="#artikel-section">Artikel</a>
+          <a href="#footer-content">Kontak</a>
+        </div>
+        <div class="navbar-button">
+          <button id="button-daftar">Daftar</button>
+          <button id="button-masuk">Masuk</button>
+        </div>
+      </nav>
+    </header>
+    <!-- NAVBAR END -->
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <!-- HERO SECTION START -->
+    <main class="container-content">
+      <section class="hero-section" id="hero-section">
+        <div class="hero-konten">
+          <h2>Halo Selamat Datang</h2>
+          <h1>Menu Varian Kuliner</h1>
+          <h1>Untuk Pecinta Makanan</h1>
+          <p id="description">
+            Kuyliner memberikan pengalaman rasa yang terbaik untuk anda
+          </p>
+          <p>Support by</p>
+          <a id="link" href="https://skilvul.com">Skilvul.com</a>
+          <button id="button-mulai">Mulai</button>
+        </div>
+      </section>
+
+      <section class="menu-section" id="menu-section">
+        <div class="search-form">
+          <h1>MENU KULINER</h1>
+          <input type="search" id="search-box" placeholder="Cari Disini ..." />
+        </div>
+        <div class="grid">
+          <div class="grid-items">
+            <article class="Artikel">
+              <img src="img/mala-kitchen.jpg" alt="mala-kitchen" />
+              <div class="konten">
+                <h4>MALA KITCHEN</h4>
+                <p>Jakarta Selatan</p>
+              </div>
+            </article>
+            <article>
+              <img src="img/nasi-goreng.jpg" alt="nasi-goreng" />
+              <h4>NASI GORENG</h4>
+              <p>Jakarta Barat</p>
+            </article>
+            <article>
+              <img src="img/ayam-bakar.jpg" alt="ayam-bakar" />
+              <h4>AYAM BAKAR</h4>
+              <p>Jakarta Timur</p>
+            </article>
+            <article>
+              <img src="img/makanan4.png" alt="mala-kitchen" />
+              <div class="konten">
+                <h4>NASI UDUK</h4>
+                <p>Jakarta UTARA</p>
+              </div>
+            </article>
+            <article>
+              <img src="img/makanan5.png" alt="nasi-goreng" />
+              <h4>MARTABAK TELOR</h4>
+              <p>Jakarta Selatan</p>
+            </article>
+            <article>
+              <img src="img/makanan6.png" alt="ayam-bakar" />
+              <h4>MIE YAMIN</h4>
+              <p>Jakarta Timur</p>
+            </article>
+            <article>
+              <img src="img/makanan7.png" alt="mala-kitchen" />
+              <div class="konten">
+                <h4>MALA KITCHEN</h4>
+                <p>Jakarta Selatan</p>
+              </div>
+            </article>
+            <article>
+              <img src="img/makanan8.png" alt="nasi-goreng" />
+              <h4>NASI PADANG</h4>
+              <p>Jakarta Utara</p>
+            </article>
+            <article>
+              <img src="img/makanan9.png" alt="ayam-bakar" />
+              <h4>SOP PAK SLAMET</h4>
+              <p>Jakarta Timur</p>
+            </article>
+          </div>
+          <button class="button-lainnya">Lihat Lainnya</button>
+        </div>
+      </section>
+      <section class="artikel-section" id="artikel-section">
+        <h1>ARTIKEL KULINER</h1>
+        <div class="grid-artikel">
+          <div class="grid-artikel-konten">
+            <article class="Artikel">
+              <img src="img/artikel1.png" alt="mala-kitchen" />
+              <div class="konten">
+                <h4>20 Tempat Nongki Murah di Jakarta Ti...</h4>
+                <p>Jakarta Timur</p>
+              </div>
+            </article>
+            <article>
+              <img src="img/artikel2.png" alt="nasi-goreng" />
+              <h4>10 Tempat Jajan di Bogor Selatan yang...</h4>
+              <p>Bogor</p>
+            </article>
+            <article>
+              <img src="img/artikel3.png" alt="ayam-bakar" />
+              <h4>Tempat kuliner terbaik di bandung ternyata banyak ...</h4>
+              <p>Bandung</p>
+            </article>
+          </div>
+          <button class="button-lainnya">Lihat Lainnya</button>
+        </div>
+      </section>
+      <section class="form-section" id="form-section">
+        <h1>FORMULIR KEBUTUHAN KULINER</h1>
+        <form class="form-konten">
+          <input type="text" id="name" placeholder="Nama" />
+          <input type="text" id="city" placeholder="Kota" />
+          <input type="email" id="email" placeholder="Email" />
+          <input type="number" id="zip-code" placeholder="Kode Pos" />
+          <input type="checkbox" id="status" />
+          <label id="check"
+            >Dengan ini saya menyatakan data yang diisi pada form ini adalah
+            benar dan telah sesuai
+          </label>
+          <button type="submit" id="submit-form">Submit</button>
+          <div id="warning"></div>
+        </form>
+      </section>
+    </main>
+    <footer class="container-footer">
+      <div class="footer-content" id="footer-content">
+        <p>&copy; 2023 Ivan Zulyan Pratama. Hak Cipta Dilindungi.</p>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>
